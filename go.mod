@@ -1,4 +1,4 @@
-module github.com/silinternational/ecs-ami-deploy/v3
+module github.com/sil-org/ecs-ami-deploy/v3
 
 go 1.21
 

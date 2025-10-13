@@ -7,7 +7,7 @@ Based on a couple assumptions, this library can replace all instances in an ECS 
 any of the running services.
 
 This process is available as:
- - A Go Module: `import "github.com/silinternational/ecs-ami-deploy/v3"`
+ - A Go Module: `import "github.com/sil-org/ecs-ami-deploy/v3"`
  - A command line application. See `cli/` directory
 
 ## Why did we build this?
@@ -66,7 +66,7 @@ available or not. When `--force-replacement` is enabled the process is _not_ ide
  - [ ] Create Lambda wrapper and provide trigger examples for schedule and SNS when newer AMI is released
 
 ## CLI Usage
-1. Grab the latest binary for your platform at https://github.com/silinternational/ecs-ami-deploy/releases
+1. Grab the latest binary for your platform at https://github.com/sil-org/ecs-ami-deploy/releases
 2. The CLI makes use of AWS's SDK for Go, which can load authentication credentials from various places similar to the 
    AWS CLI itself
 3. Run `ecs-ami-deploy list-clusters` to check if it's working and what clusters you have available.

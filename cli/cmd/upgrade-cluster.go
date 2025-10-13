@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	ead "github.com/silinternational/ecs-ami-deploy/v3"
+	ead "github.com/sil-org/ecs-ami-deploy/v3"
 )
 
 var (

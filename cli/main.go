@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/silinternational/ecs-ami-deploy/v3/cli/cmd"
+	"github.com/sil-org/ecs-ami-deploy/v3/cli/cmd"
 )
 
 var (
