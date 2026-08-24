@@ -7,6 +7,7 @@ import (
 	"math"
 	"os"
 	"sort"
+	"slices"
 	"strings"
 	"time"
 
@@ -300,7 +301,7 @@ func (u *Upgrader) UpgradeCluster() error {
 
 	var newInstances []string
 	for _, c := range clusterInstances {
-		if !internal.IsStringInSlice(c, originalInstanceIDs) {
+		if !slices.Contains(originalInstanceIDs, c) {
 			newInstances = append(newInstances, c)
 		}
 	}
@@ -817,7 +818,7 @@ func (u *Upgrader) waitForCompletedDeployments() error {
 	pageSize := 10
 	pages := int(math.Ceil(float64(len(serviceArns)) / float64(pageSize)))
 
-	for p := 0; p < pages; p++ {
+	for p := range pages {
 		start := p * pageSize
 		end := start + pageSize
 		var pageServiceArns []string

@@ -1,6 +1,8 @@
 module github.com/sil-org/ecs-ami-deploy/v3
 
-go 1.25
+go 1.26
+
+toolchain go1.26.7
 
 require (
 	github.com/aws/aws-sdk-go-v2 v1.23.1
